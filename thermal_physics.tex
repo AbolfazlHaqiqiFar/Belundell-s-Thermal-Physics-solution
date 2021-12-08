@@ -1,0 +1,100 @@
+\begin{latin}   
+   \section*{Exercises}
+    (16.1) (a):\
+
+
+    \begin{alignat*}{3}
+        \textmd{ First low }&:dU &&= TdS - pdv\\
+        \textmd{ Enthalpy }&:H &&= U + pv\\
+        \textmd{ Helmholtz function }&:F &&= U - TS\\
+        \textmd{ Gibbd function }&:G &&= U + pv - TS
+    \end{alignat*}
+    give $dU , dH, dF, dG$ in terms of $T, S, p, V$
+
+    \begin{alignat*}{2}
+        dU &= TdS - pdv\\\\
+        dH &= dU + pdV + Vdp\\
+        &= Tds - pdV  + pdV + Vdp\\
+        &= Tds + Vdp\\\\
+        dF &= dU - TdS - SdT\\
+        &=TdS - pdV -TdS - SdT\\
+        &= -pdV - SdT\\\\
+        dG &= dH - TdS - SdT\\
+        &= TdS - Vdp -TdS - SdT \\
+        &= -SdT + pdV\\ 
+    \end{alignat*}
+    (16.3): \\
+    \begin{alignat*}{2}
+    dU &= TdS - pdv\\
+    dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV\\
+    \Longrightarrow dU &= T[\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV] +pdV\\
+    &=T(\frac{\partial S}{\partial T})_v dT+ [T(\frac{\partial S}{\partial V})_T dV -p]dV\\\\
+    (\frac{\partial U}{\partial V})_T \Rightarrow
+    \begin{cases} 
+    \beta_p = \frac{1}{V}(\frac{\partial V}{\partial T})_p ) \\
+    \kappa_T = - \frac{1}{V}(\frac{\partial V}{\partial p})_T )
+    \end{cases}
+    \Longrightarrow\frac{\beta_p}{\kappa_T} &= (\frac{\partial p}{\partial T})_V )\\\\
+    1)\to(\frac{\partial S}{\partial T})_v &= [T(\frac{\partial S}{\partial V})_T -p]\\
+    2)\to (\frac{\partial S}{\partial V})_T &= (\frac{\partial p}{\partial T})_V\\
+    1and2\Longrightarrow (\frac{\partial U}{\partial V})_T  &= [T(\frac{\partial p}{\partial T})_V -p ]\\
+    \Longrightarrow dV &= (\frac{\partial V}{\partial T})_pdT + (\frac{\partial V}{\partial p})_T)dp \\ 
+    in isochoric \Longrightarrow (\frac{\partial V}{\partial p})_T dp &= -(\frac{\partial V}{\partial T})_pdT\\
+    \Longrightarrow dp &= - \frac{(\frac{\partial V}{\partial T})_p}{(\frac{\partial V}{\partial p})_T}dT\\
+    (\frac{\partial p}{\partial T})_V &= - \frac{(\frac{\partial V}{\partial T})_p}{(\frac{\partial V}{\partial p})_T}dT\\
+    and (\frac{\partial p}{\partial T})_V &= \frac{\beta_p}{\kappa_T}\\
+    \Longrightarrow (\frac{\partial U}{\partial V})_T &= [T(\frac{\beta_p}{\kappa_T}) - p]\\
+    in.the.other \to C_p -C_V &= \frac{VT\beta_p }{\kappa_T}\\
+    \Longrightarrow \frac{C_p - C_V}{V\beta_p} &= \frac{T\beta_p}{\kappa_T}\\
+    \Longrightarrow (\frac{\partial U}{\partial V})_T &= [\frac{C_p - C_V}{V\beta_p} -p]
+    \end{alignat*}
+
+    (16.4) (a): \
+    \begin{alignat*}{3}
+        U_(S,V) &= TdS - pdV\\
+    \begin{cases} 
+        dS = (\frac{\partial S}{\partial T})_v dT +(\frac{\partial S}{\partial V})_T dV\\
+        (\frac{\partial S}{\partial T})_v = \frac{C_V}{T}\\
+        dV = -V(\frac{dp}{p})
+    \end{cases}
+        \Longrightarrow&= T(\frac{\partial S}{\partial T})_v dT + T(\frac{\partial S}{\partial V})_T (-Vdp) + Vdp= U_(T,p)\\\\
+    \end{alignat*}
+
+    (b):\
+    \begin{alignat*}{2}
+        Due\ to\ the\ 3Exercise \Longrightarrow (\frac{\partial U}{\partial V})_T &= [T((\frac{\partial S}{\partial V})_T - p]\\
+        \frac{p}{T} &= (\frac{\partial S}{\partial V})_T - (\frac{\partial U}{\partial V})_T \frac{1}{T}\\
+        \begin{cases} 
+            (\frac{\partial S}{\partial V})_T = f_(V)\\
+            (\frac{\partial U}{\partial V})_T \frac{1}{T} = \int(\frac{\partial U}{\partial V})_T \frac{dT}{T^2}
+        \end{cases}\\
+        \Longrightarrow \frac{p}{T} &= \int(\frac{\partial U}{\partial V})_T \frac{dT}{T^2} + f_(V)
+    \end{alignat*}\\\\
+
+    (16.5):\
+    \begin{alignat*}{2}
+        dU &= TdS - pdv\\
+        dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV\\
+        \Longrightarrow dU &= T[\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV] +dV\\
+        &=T(\frac{\partial S}{\partial T})_v dT+ [T(\frac{\partial S}{\partial V})_T dV -p]dV\\
+        isothermal\Longrightarrow dU&= [T(\frac{\partial S}{\partial V})_T dV -p]dV\\
+        \Longrightarrow (\frac{\partial U}{\partial V})_T &= [T((\frac{\partial S}{\partial V})_T - p]\\
+        Example\ 16.5\ \to (\frac{\partial S}{\partial V})_T = (\frac{\partial p}{\partial T})_V\Longrightarrow p &= T(\frac{\partial p}{\partial T})_V - (\frac{\partial U}{\partial V})_T \\
+    \end{alignat*}\\
+
+    (16.6):\
+    \begin{alignat*}{2}
+        dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV\\
+        \begin{cases}
+            \frac{\partial S}{\partial T})_v dT =\frac{C_V}{T} dT\\
+            (\frac{\partial S}{\partial V})_T = (\frac{\partial p}{\partial T})_V
+        \end{cases}\\\\
+        \Longrightarrow dS&= \frac{C_V}{T} dT + (\frac{\partial p}{\partial T})_V dV \to
+        \begin{cases}
+            dV = -V \frac{dp}{p}\\
+            (\frac{\partial p}{\partial T})_V = \frac{R}{V}
+        \end{cases}\\\\
+        \Longrightarrow S &= C_p ln\ T - Rln\ p + costant
+    \end{alignat*}
+
+\end{latin}

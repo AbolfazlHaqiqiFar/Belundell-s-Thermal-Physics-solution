@@ -1,0 +1,45 @@
+\begin{latin}
+   
+    \section*{Exercises}
+    \section*{(24.1) :}
+    \begin{alignat*}{2}
+        \Theta_D &= \frac{\hbar \omega_D}{k_B} \Rightarrow \omega_D = 100k_B/\hbar\\
+        \omega_D &= (\frac{6N\pi^2 v_s}{V})^{1/3}\\
+        v_s &= \omega_D ^3 \frac{V}{6N\pi^2}\\
+        \Longrightarrow v_s &= \frac{0.3 k_B }{6N\pi^2 \hbar} 10^{3}\\\\
+        \omega &= (4K/m)^{1/2}|sin(qa/2)| \Rightarrow \omega_{Max} = 2(K/m)^{1/2}\\
+        v_s &= a(K/m)^{1/2} \Rightarrow (K/m)^{1/2} = \frac{v_s}{a}\\
+        \Longrightarrow \omega_{Max} &= 2\frac{v_s}{a}
+    \end{alignat*}
+    
+    \section*{(24.2) :}
+    \begin{alignat*}{2}
+        U &=  \frac{9}{8} N\hbar \omega_D + \frac{9RT}{x_D^3} \int_0^{x_D}\frac{x^3dx}{e^x - 1}\\
+        &=  \frac{9}{8} N\hbar \omega_D + \frac{9RT}{(\hbar \beta \omega_D)^3} \int_0^{x_D}\frac{(\hbar \beta \omega)^3d(\hbar \beta \omega)}{e^{(\hbar \beta \omega)} - 1}\\
+        &=  \frac{9}{8} N\hbar \omega_D + \frac{9RT(\hbar \beta)^4}{(\hbar \beta \omega_D)^3} \int_0^{x_D}\frac{(\omega)^3d( \omega)}{e^{(\hbar \beta \omega)} - 1}\\
+        &=  \frac{9}{8} N\hbar \omega_D + \frac{9RT(\hbar \beta)}{\omega^3} \int_0^{x_D}\frac{(\omega)^3d( \omega)}{e^{(\hbar \beta \omega)} - 1}
+    \end{alignat*}
+
+    \section*{(24.3):}
+    \begin{alignat*}{2}
+        n_{(\omega)}d\omega &= \frac{g_{(\omega)}d\omega}{e^{\beta \hbar \omega} - 1} = \frac{3V\omega^2}{2\pi^2v^3(e^{\beta \hbar \omega} - 1)}\\
+        u &= \int_0^{\omega_D}\hbar \omega n_{(\omega)}d\omega = 3V\hbar/2\pi^2v^3\int0^{\omega_D} \frac{\omega^2 d\omega}{e^{\beta \hbar \omega}-1}\\
+        &= \frac{3}{2}\frac{Vk_B^4 T^4}{v^3\hbar^3\pi^2}\int \frac{x^3 dx}{e^x -1}\\
+        if \to x << \frac{\hbar \omega}{k_B} \Rightarrow u &=  \frac{3}{2}\frac{Vk_B^4 T^4}{v^3\hbar^3\pi^2}\int_0^\infty \frac{x^3 dx}{e^x -1}\\
+        &= \frac{Vk_B^4 T^4}{10 v^3\hbar^3}\\
+        \Longrightarrow C_v &= \frac{\partial u}{\partial T} \propto T^d =! :|
+    \end{alignat*}
+
+    \section*{(24.4)}
+    \begin{alignat*}{2}
+        \omega &= (4K/m)^{1/2}|sin(qa/2)| \\
+        g_{(q)}dq &= g_{(\omega)}d\omega \Rightarrow g_{(\omega)} = \frac{g_{(q)}}{d\omega/dq}\\
+        \frac{d\omega}{dq}  &= (4K/m)^{1/2}(a/2)cos(qa/2)\\
+        \omega^2  &= (4K/m)sin^2(qa/2) = \frac{4K}{m}(1 - cos^2(qa/2))\\
+        \Rightarrow cos(qa/2) &= (1 - \frac{m\omega^2}{4K})^(1/2)\\
+        g_{(q)}dq &= \frac{2dq}{2\pi/l} = \frac{ldq}{\pi}\\
+        \Longrightarrow g_{\omega} &= \frac{2}{\pi a}[\omega^2 - 4K/m]^{1/2}
+    \end{alignat*}
+
+
+\end{latin} 

@@ -1,0 +1,69 @@
+\begin{latin}
+    \section*{Exercises}
+    (16.2) (a) (i):\\
+   
+    \begin{alignat*}{2}
+        \frac{\partial T}{\partial V})_U \to dU &= TdS - pdV\\
+        S &= S_{(T,V)}\\
+        \Longrightarrow dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV\\
+        \Longrightarrow dU &= T[(\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV] - pdV\\
+        \textmd{in constant U we will have dU = 0 }\\
+        T(\frac{\partial S}{\partial T})_v \frac{dT}{dV} &= [T(\frac{\partial S}{\partial V})_T  -p]dV\\
+        (\frac{\partial T}{\partial V}) &= -\frac{1}{T}(\frac{\partial T}{\partial S})_V [T(\frac{\partial S}{\partial V})_T  -p]\\
+        (\frac{\partial T}{\partial S})_V &= C_V ; (\frac{\partial S}{\partial V})_T = (\frac{\partial p}{\partial T})_V \\
+        \Longrightarrow  (\frac{\partial T}{\partial V}) &= \frac{1}{C_V}  [T(\frac{\partial p}{\partial T})_V -p]\\
+    \end{alignat*}
+    (ii):
+    \begin{alignat*}{2}
+        (\frac{\partial T}{\partial V})_S &= ? \to dS = 0\\
+        S = S_(V,T) \to dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV \\
+        \Longrightarrow (\frac{\partial S}{\partial T})_v \frac{dT}{dV} &= - (\frac{\partial S}{\partial V})_T\\
+        (\frac{\partial T}{\partial V}) &= (\frac{\partial T}{\partial S})_V (\frac{\partial S}{\partial V})_T
+        (\frac{\partial S}{\partial V})_T =(\frac{\partial p}{\partial T})_V &; (\frac{\partial T}{\partial S})_V = C_V \\
+        \Longrightarrow (\frac{\partial T}{\partial V})_S &= -\frac{T}{C_V}(\frac{\partial p}{\partial T})_V 
+    \end{alignat*}
+    (iii):
+    \begin{alignat*}{2}
+    (\frac{\partial T}{\partial P}) _H &= ? \to dH = 0\\
+    dH &= T[(\frac{\partial S}{\partial T})_p dT + [T(\frac{\partial S}{\partial p})_T  -V]dp\\
+    \Longrightarrow(\frac{\partial T}{\partial P}) _H &= \frac{1}{C_p}[T(\frac{\partial V}{\partial T})_p  +V]\\
+    \end{alignat*}
+    (b):
+    \begin{alignat*}{2}
+        pV = nRT \to (\frac{\partial p}{\partial T})_V &= \frac{nR}{V}\\
+        (\frac{\partial T}{\partial V})_U &= \frac{1}{C_V}  [T(\frac{nR}{V})_V -p] = \frac{1}{C_V}[p - p] = 0\\
+        pV = nRT \to (\frac{\partial V}{\partial T})_p &= \frac{nR}{p}\\
+        (\frac{\partial T}{\partial P}) _H &= \frac{1}{C_p}[T(\frac{\partial V}{\partial T})_p  +V] = 0\\
+        prove \to pV^{\gamma} &= constant.\\
+        \begin{cases}
+            dQ = 0 \to TdS = 0 \Rightarrow dU = -pdV\\
+            dH = TdS + Vdp \Rightarrow dH = Vdp
+        \end{cases}
+        \frac{dH}{dU} &= (\frac{\partial H}{\partial U})_S = \frac{Vdp}{-pdV}\\
+        dU = C_V dT ; dH = C_P dT \Rightarrow \frac{dH}{dU} &= \frac{C_p}{C_V} = \gamma \\
+        \to \gamma = \frac{Vdp}{-pdV} \Rightarrow \gamma \frac{dV}{V} &= -\frac{dp}{p}\\
+        \Longleftarrow \gamma \int \frac{dV}{V} + \int \frac{dp}{p} &= 0\\
+        \Longrightarrow \gamma ln(V)+ ln(p) = ln(constant.)\Rightarrow  ln(V^{\gamma})+ ln(p) &= ln(constant.)\\
+        ln(pV^{\gamma}) &= ln(constant.)\\
+        \Longrightarrow pV^{\gamma} &= constant.
+    \end{alignat*}\\
+    (16.7):
+    \begin{alignat*}{2}
+        S = S_(V,T) \to dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T dV \\
+        V = V_(p,T) \to dV &= (\frac{\partial V}{\partial T})_p dT + (\frac{\partial V}{\partial p})_T dp \\
+        \Longrightarrow dS &= (\frac{\partial S}{\partial T})_v dT + (\frac{\partial S}{\partial V})_T[(\frac{\partial V}{\partial T})_p dT + (\frac{\partial V}{\partial p})_T dp]\\
+        \Longrightarrow dS &= [(\frac{\partial S}{\partial T})_v +(\frac{\partial S}{\partial V})_T[(\frac{\partial V}{\partial T})_p]dT + [(\frac{\partial S}{\partial V})_T (\frac{\partial V}{\partial p})_T]dp\\
+        [(\frac{\partial V}{\partial T})_p]dT + [(\frac{\partial S}{\partial V})_T (\frac{\partial V}{\partial p})_T &= (\frac{\partial f_{(p)}}{\partial p})_T \Rightarrow f_{(p)} = \int \frac{-nR}{p}dp = -nR ln(p) + constant.\\
+        S &= \int (\frac{\partial S}{\partial T})_v +(\frac{\partial S}{\partial V})_T[(\frac{\partial V}{\partial T})_p]dT + f_{(p)}\\
+        S &= \int \frac{1}{T} [C_V +nR]dT + f_{(p)}\\
+        &= [C_V +nR]ln(T) +f_{(p)}\\
+        S &= [C_V +nR]ln(T) - nR ln(p) + constant.\\
+        n = 1 ; C_p - C_V = R \Rightarrow S &= C_V ln(p) - C_(p)[ln(p) - ln(T)] + constant.\\
+        \rho = \frac{M}{V} = \frac{pM}{RT} \to ln(\rho) &= ln(p)- ln(T) + ln(\frac{M}{R})\\
+        \Longrightarrow S &=  C_V ln(p) - C_(p)[ln(p) - ln(T) +ln(\frac{M}{R})] + constant.\\
+        &= C_V ln(p) - C_p ln(\rho) + constant.\\
+        &= C_V[ln(p)- \gamma ln(\rho) ]+ constant.\\
+        \Longrightarrow S &= C_V [ln(\frac{p}{\rho^{\gamma}})]+ constant.
+    \end{alignat*}
+
+\end{latin}

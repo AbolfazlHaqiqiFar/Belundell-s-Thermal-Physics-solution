@@ -1,0 +1,105 @@
+\begin{latin}
+    \section*{Exercises}
+    \section*{(20.1):}
+    \begin{alignat*}{2}
+        k_B T \gg \hbar \omega \ ,so\ ,\beta \hbar \omega\to 0\Longrightarrow Z &= \sum e^{-\beta \hbar \omega} = \int e^{-\beta \hbar \omega} d\beta\\
+        \Longrightarrow Z &= \frac{1}{\beta \hbar \omega} e^{-\beta \hbar \omega} \\
+        e^{-\beta \hbar \omega} \to 1 \Longrightarrow Z &\approx \frac{1}{\beta \hbar \omega}\\
+        U = -\frac{1}{\beta}\frac{\partial}{\partial \beta}ln Z \Rightarrow U&= -\frac{1}{\beta}\frac{\partial}{\partial \beta}ln \frac{1}{\beta \hbar \omega} = \frac{1}{\beta \omega}\\
+        S = -\frac{1}{T}\frac{1}{\beta}\frac{\partial}{\partial \beta}lnZ + k_B lnZ \Rightarrow S &= -\frac{1}{T}\frac{1}{\beta}\frac{\partial}{\partial \beta}ln\frac{1}{\beta \hbar \omega} + k_B ln\frac{1}{\beta \hbar \omega}\\
+        &= -\frac{1}{\beta \omega T} - k_B ln \beta \hbar \omega\\
+        F = k_B TlnZ \Rightarrow F&= -k_B T ln \beta \hbar \omega\\
+        C_V = k_B T [2(\frac{\partial lnZ}{\partial T})+ T\frac{\partial^2lnZ}{\partial T^2}]
+        \Rightarrow  C_V &= k_B T [2(\frac{\partial  }{\partial T}ln\frac{k_B T}{\hbar \omega})+ T\frac{\partial^2}{\partial T^2}ln\frac{k_B T}{\hbar \omega}]
+    \end{alignat*}
+    \section*{(20.2):}
+    \begin{alignat*}{2}
+        lnP_i = ln(\frac{1}{Z}e^{-\beta E_i}) &= -lnZ + ln e^{-\beta E_i} = \beta F  - \beta E_i\\
+        \Longrightarrow  lnP_i &= \beta (F-E_i)
+    \end{alignat*}
+    \section*{(20.3):}
+    \begin{alignat*}{2}
+        U &= \hbar \omega (\frac{1}{2}+ \frac{1}{e^{\beta \hbar \omega}})\\
+        &=\frac{\hbar \omega}{2}(\frac{e^{\beta \hbar \omega }+1}{e^{\beta \hbar \omega }- 1} )\\
+        \Longrightarrow U &= \frac{\hbar \omega}{2} coth\frac{{\beta \hbar \omega}}{2}
+    \end{alignat*}
+    \section*{(20.4):}
+    \begin{alignat*}{2}
+        Z &= \frac{e^{-\beta \hbar \omega/2}}{1 -\beta \hbar \omega}\\
+        \textmd{for Energy} \to U&= -\frac{dlnZ}{d\beta}\\
+        &= -\frac{d}{d\beta}[ln(e^{-\beta \hbar \omega/2}) - ln(1-e^{-\beta \hbar \omega})]= \frac{d}{d\beta}[-\frac{\beta \hbar \omega}{2}- ln(1-e^{-\beta \hbar \omega})]\\
+        &= \frac{\hbar \omega}{2} + \frac{\hbar \omega e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega/}}= \frac{\hbar \omega}{2} + \frac{\hbar \omega }{e^{-\beta \hbar \omega/}-1}\\\\
+        \text{for Helmholtz function} \to F &= -k_BTln(Z)\\
+        &= -k_BTln(\frac{e^{-\beta \hbar \omega/2}}{1 -e^{\beta \hbar \omega}})\\
+        &= -k_B Tln [ln(e^{-\beta \hbar \omega/2}) - ln(1-e^{-\beta \hbar \omega})]\\
+        &= \frac{\hbar \omega}{2} + k_BT ln (1-e^{-\beta \hbar \omega})\\\\
+        \textmd{Entropy}\to S&= \frac{U-F}{T} = k_B [\frac{-\beta \hbar \omega}{1-e^{-\beta \hbar \omega/}}]\\\\
+        \text{Heat capacity}\to C_V &= (\frac{\partial U}{\partial T})_v \\
+        C_V &= (\frac{\partial U}{\partial \beta}\frac{\partial \beta}{\partial T})_V = -\frac{1}{k_B T}(\frac{\partial U}{\partial \beta})_V\\
+        C_V &= \frac{1}{k_B T^2}(\frac{\partial }{\partial \beta}[\frac{\hbar \omega}{2} + \frac{\hbar \omega }{e^{\beta \hbar \omega/}-1}])\\
+        &= \frac{1}{k_B T^2}[\frac{(\hbar \omega)^2e^{\beta \hbar \omega}}{1-e^{\beta \hbar \omega}}]\\
+        &=k_B (\beta \hbar \omega)^2\frac{e^{\beta \hbar \omega}}{1-e^{\beta \hbar \omega}}
+    \end{alignat*}
+    \section*{(20.5):}
+    \begin{alignat*}{2}
+        (a):\\
+        Z &= \sum e^{\beta E_{\alpha}} = e^{\beta \mu_B B} + e^{-\beta \mu_B B} = 2\frac{e^{\beta \mu_B B} + e^{-\beta \mu_B B}}{2} = 2 cosh(\beta \mu_B B)\\
+        (b):\\
+        F&= -k_B TlnZ = k_B T ln(2 cosh(\beta \mu_B B))^N = -Nk_B T ln (2 cosh(\beta \mu_B B))\\
+        (c):\\
+        m &= (\frac{\partial F}{\partial B})_T = -Nk_B T \frac{\partial }{\partial B} ln (2 cosh(\beta \mu_B B)) = -Nk_B T \frac{(2 sinh(\beta \mu_B B))\beta\mu_0}{2 cosh(\beta \mu_B B)}\\
+        &\Longrightarrow m= N\mu_B tanh(\beta \mu_B B)\\
+        (d):\\
+        &\textmd{Maclaurin's series}\to for \ \mu_B B \ll k_BT = \beta \to tanh(\beta \mu_B B)\approx \beta \mu_B B \\
+        &\Rightarrow m\approx N\mu_B (\beta \mu_B B) = N\mu_B^2  B/k_BT
+    \end{alignat*}
+    \section*{(20.6):}
+    \begin{alignat*}{2}
+        Z &= \sum e^{\beta E_{\alpha}}\\
+        &= e^{-\beta(0)} + e^{-\beta(\Delta - g\mu_B B)} +e^{-\beta(\Delta)} + e^{-\beta(\Delta + g\mu_B B)}\\
+        &= 1+ e^{-\beta(\Delta)} (1 +e^{\beta g\mu_B B)}+e^{-\beta g\mu_B B)} )\\
+        \Longrightarrow Z&= 1 + e^{-\beta(\Delta)}(1 + cosh(\beta g\mu_B B)) \\\\
+        F&= -Nk_BT lnZ \\
+        &=-Nk_BT ln(1 + e^{-\beta(\Delta)}(1 + cosh(\beta g\mu_B B)))\\\\
+        m &= (\frac{\partial F}{\partial B})_T\\
+        &= -Nk_BT [\frac{\partial }{\partial B}ln(1 + e^{-\beta(\Delta)}(1 + cosh(\beta g\mu_B B)))]\\
+        &= -Nk_B T \frac{2 e^{-\beta \Delta}sinh(\beta \mu_B gB)\beta\mu_0 g}{1+e^{-\beta \Delta}(1+ 2 cosh(\beta \mu_B B))}\\
+        M = \frac{m}{V}\Rightarrow \chi &=\frac{\mu_0 M}{B} = \frac{\mu_0 m}{BV} \\
+        \textmd{Maclaurin's series}\to \chi &\approx \frac{\mu_0 }{BV}Nk_BT\frac{2 e^{-\beta \Delta}(\beta \mu_B gB)\mu_0 \beta g}{1+e^{-\beta \Delta}(1+ 2 )} .......
+    \end{alignat*}
+    \section*{(20.7):}
+    \begin{alignat*}{2}
+        \text{for Helmholtz function} \to F &= -k_BTln(Z)\\
+        &=-k_BTln(Z_{SHO}^3)\\
+        &= -3k_BTln(Z_{SHO})\\
+        &= -3k_BTln(\frac{e^{-\beta \hbar \omega/2}}{1 -e^{\beta \hbar \omega}})\\
+        &= -3k_B Tln [ln(e^{-\beta \hbar \omega/2}) - ln(1-e^{-\beta \hbar \omega})]\\
+        &= 3\frac{\hbar \omega}{2} + 3k_BT ln (1-e^{-\beta \hbar \omega})\\\\
+        \textmd{for Energy} \to U&= -\frac{dlnZ}{d\beta}\\
+        &= -3\frac{d}{d\beta}[ln(e^{-\beta \hbar \omega/2}) - ln(1-e^{-\beta \hbar \omega})]\\
+        &= 3\frac{d}{d\beta}[-\frac{\beta \hbar \omega}{2}- ln(1-e^{-\beta \hbar \omega})]\\
+        &= 3\frac{\hbar \omega}{2} + 3\frac{\hbar \omega e^{-\beta \hbar \omega}}{1-e^{-\beta \hbar \omega/}}= 3\frac{\hbar \omega}{2} + 3\frac{\hbar \omega }{e^{-\beta \hbar \omega/}-1}\\\\
+        C_V &= (\frac{\partial U}{\partial \beta}\frac{\partial \beta}{\partial T})_V = -\frac{1}{k_B T^2}(\frac{\partial U}{\partial \beta})_V\\
+        C_V &= \frac{3}{k_B T^2}(\frac{\partial }{\partial \beta}[\frac{\hbar \omega}{2} + \frac{\hbar \omega }{e^{\beta \hbar \omega/}-1}])\\
+        &= \frac{3}{k_B T^2}[\frac{(\hbar \omega)^2e^{\beta \hbar \omega}}{(1-e^{\beta \hbar \omega})^2}]\\
+        &=3k_B (\beta \hbar \omega)^2\frac{e^{\beta \hbar \omega}}{1-e^{\beta \hbar \omega}}\\
+        \beta \hbar \omega \ll 1 \ so \ (e^{\beta \hbar \omega}) &\approx \beta \hbar \omega  \ \& \  e^{\beta \hbar \omega} \approx 1\\
+        \Longrightarrow C_V &\approx 3k_B
+    \end{alignat*}
+    \section*{(20.8):}
+    (a):\\
+    \begin{alignat*}{2}
+        0 \ & -------------------- \ n = \infty \\
+        -0.54 \ & -------------------- \ n = 5 \\
+        -0.85 \ & -------------------- \ n = 4 \\\\
+        -1.51 \ & -------------------- \ n= 3\\\\
+        E/ev \ \ \ \ \ \ \ \ \ \ \ \ \ & \\
+        -3.4 \ & -------------------- \ n = 2 \\\\\\\\
+        -13.6 \ & -------------------- \ n = 1
+    \end{alignat*}
+    \begin{alignat*}{2}
+        (b):
+        Z &= \sum 2n^2 e^{-\beta E} \\
+        &= \sum 2n^2 e^{\beta R/n^2} =  \sum 2n^2 exp{\frac{R}{n^{2} k_B T}}\\
+    \end{alignat*}
+\end{latin}

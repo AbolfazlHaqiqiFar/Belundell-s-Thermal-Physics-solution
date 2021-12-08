@@ -1,0 +1,45 @@
+\begin{latin}
+    \section*{Exercises}‬
+    \section*{(22.1)}
+    \begin{alignat*}{2}
+        &S = -k_B \Sigma p_i ln p_i \\
+        &\frac{\partial }{\partial p_i}[- \Sigma p_i ln p_i - \beta ( \Sigma p_i E_i - U)- \alpha ( \Sigma p_i - 1)- \beta\mu \Sigma p_i N_i] = 0\\
+        &(1+ \alpha) + \beta E_i - \beta\mu N_i + ln p_i = 0\\
+        &p_i = \frac{e^{-\beta E_i}e^{-\beta \mu N_i}}{(e^{1+\aleph } =\mathcal{Z} )}\\
+        &\Sigma p_i = 1 \Rightarrow \mathcal{Z} = e^{-\beta E_i}e^{-\beta \mu N_i}
+    \end{alignat*}
+    \section*{(22.2)}
+    \begin{alignat*}{2}
+        \mu &= k_B T ln (n\lambda_{th}^3)\\
+        \mu / k_B T &= ln (n\lambda_{th}^3)\\
+        \Longrightarrow z &= exp(\mu \beta) = n\lambda_{th}^3
+    \end{alignat*}
+    \section*{(22.3)}
+    \begin{alignat*}{2}
+        \frac{dlnK}{d(1/T)} &= -\frac{\Delta H}{R}\\
+        \frac{dlnK}{d(1/T)} &\approx - 25000 K\\
+        \Delta H &= (-25000)(-8.3) = 206 kj/mol
+    \end{alignat*}
+    \section*{(22.4)}
+    \begin{alignat*}{2}
+        \overline{N} &= \Sigma N_i p_i = \Sigma N_i \frac{1}{\mathcal{Z}} e^{-\beta(E_i - \mu N_i)} = \frac{\partial ln \mathcal{Z} }{ \partial \beta \mu} \\
+        \\
+        U &= \Sigma E_i p_i \\
+        (\frac{\partial ln \mathcal{Z} }{ \partial \beta })_\mu &= \mu  \Sigma N_i p_i - \Sigma E_i p_i \\
+        \Sigma E_i p_i &=  -(\frac{\partial ln \mathcal{Z} }{ \partial \beta })_\mu +\mu  \Sigma N_i p_i\\
+        \Longrightarrow U &=  -(\frac{\partial ln \mathcal{Z} }{ \partial \beta })_\mu + \mu N\\
+        \\
+        ln p_i  &= -\beta(E_i - \mu N_i) - ln \mathcal{Z}\\
+        S &= -k_B \Sigma p_i\beta(-E_i + \mu N_i) - k_B \Sigma ln \mathcal{Z} \\
+        -\Sigma p_i\beta E_i &= U \\
+        \Sigma p_i\beta \mu N_i &= \mu N
+    \end{alignat*}
+    \section*{(22.5)}
+    \begin{alignat*}{2}
+        F &= - k_B T lnZ = k_B T (N ln Z_1 - (Nln N - N))
+        \mu &= \frac{\partial F}{- \partial N}\\
+        &= -k_B T ln Z_1 + k_B T(1 + ln N -1)\\
+        &= -k_B T ln \frac{Z_1}{N}
+    \end{alignat*}
+\end{latin}
+

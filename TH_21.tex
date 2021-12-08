@@ -1,0 +1,42 @@
+\begin{latin}
+    \section*{Exercises}
+    \section*{21.1}
+    \begin{alignat*}{2}
+        Z &= \int e^{\beta E_{\aleph} }g_{(k)}dk\\
+        \Delta k_x \Delta k_y = \frac{\pi ^2}{l^2} \to g_{(k)}dk &= \frac{Akdk}{2\pi} \ and \ E_{(k)} = \frac{\hbar^2 k^2}{2m}\\
+        \Longrightarrow Z &= \int e^{\beta \frac{\hbar^2 k^2}{2m} }\frac{Akdk}{2\pi}\\
+        &= \frac{A}{\lambda_{th}^2}
+    \end{alignat*}
+    \section*{21.2}
+    \begin{alignat*}{2}
+        Z &= Z_1^N = (\frac{V}{\lambda_{th}^3})^N \propto V\beta^{-3/2}\\
+        U &=  -\frac{1}{\beta}\frac{\partial}{\partial \beta}ln Z \\
+        &=  -\frac{1}{\beta}\frac{\partial}{\partial \beta}ln \beta^{-3/2} \\
+        &= \frac{3}{2}Nk_B T\\
+        F &= -k_B T lnZ \\
+        &=-k_B T ln(\frac{V}{\lambda_{th}^3})^N\\
+        &= -Nk_B T ln(\frac{V}{\lambda_{th}^3})\\
+        \Longrightarrow S&= \frac{U - F}{T}= \frac{\frac{3}{2}Nk_B T-Nk_B T ln(\frac{\lambda_{th}^3}{V})}{T}\\
+        &= Nk_B[\frac{3}{2} - ln(\frac{\lambda_{th}^3}{V})]
+    \end{alignat*}
+
+    \section*{21.4}
+    \begin{alignat*}{2}
+        U &= -\frac{dlnZ}{d\beta} = \frac{\Delta g_2 e^{-\beta \Delta}}{g_1 + g_2e^{-\beta \Delta}}\\
+        C &= -\frac{1}{k_B T}\frac{dU}{d\beta}\\
+        &= -\frac{1}{k_B T}\frac{d}{d\beta}(\frac{\Delta g_2 e^{-\beta \Delta}}{g_1 + g_2e^{-\beta \Delta}})\\
+        &= -\frac{1}{k_B T} (\frac{-(g_1 + g_2 e^{-\beta \Delta})\Delta^2 g_2 e^{-\beta \Delta} + (\Delta g_2)^2 e^{-\beta \Delta}}{(g_1 + g_2 e^{-\beta \Delta})^2})\\
+        &= \frac{g_1 g_2 \Delta^2 e^{-\beta \Delta}}{k_B T^2 (g_1 + g_2 e^{-\beta \Delta})^2}\\\\
+        where \ Z_N &= (1/N!)[V/\lambda_{th}^3]^N \text{The potential energy is, therefore,}\\
+        U &= -\frac{d lnZ}{d\beta} = -\frac{d lnZ_{atom}}{d\beta}- \frac{dln Z_N}{d\beta} 
+    \end{alignat*}
+
+    \section*{(21.5)}
+    \begin{alignat*}{2}
+        C_P &= C_V +R\\
+        C_V &= fR/2 \to \text{at low temperature we have 3 degrees of freedom} \to C_V = (3/2)R\\
+        \Longrightarrow C_p&= (3/2)R + R= (5/2)R\\
+        &\text{Above $T= 300K$ we have 2 degrees of freedom} \to C_V = (5/2)R\\
+        C_p&= (5/2)R + R= (7/2)R
+    \end{alignat*}
+\end{latin}

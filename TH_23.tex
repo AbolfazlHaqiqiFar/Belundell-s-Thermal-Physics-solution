@@ -1,0 +1,74 @@
+\begin{latin}
+    \section*{(23.1):}
+    \begin{alignat*}{2}
+        \text{Power radiated per unit area : } P &= \frac{1}{4}uc = \sigma T^4 \\
+        P_{sun} &= (\sigma T^4)(4\pi R_{sun}^2)\\
+        \frac{\pi R_{earth}^2}{4\pi D^2}(\sigma T_{sun}^4 \times 4\pi R_{sun}^2 - A(\sigma T_{sun}^4 \times 4\pi R_{sun}^2)) &= 4\pi R_{earth}^2 \times \sigma T_{earth}^4\\
+        \frac{R_{earth}^2 T_{sun}^4 R_{sun}^2}{4D^2}(1-A) &= R_{earth}^2 T_{earth}^4 \\
+        \frac{T_{sun}^4}{T_{earth}^4}(1-A) &= 4\frac{D^2}{R_{sun}^2}\\
+        \Longrightarrow T_{earth} &=  T_{sun}(1-A)^{1/4} \sqrt{\frac{R_{Sun}}{2D}}
+    \end{alignat*}
+
+    \section*{(23.2:)}
+    \begin{alignat*}{2}
+        f_{(x)} &= \frac{x^{\alpha}}{e^x - 1}\\
+        u_{\lambda}&= \frac{8\pi hc}{\lambda^5}\frac{1}{e^{\beta hc/\lambda}-1}\\
+        u_{\nu} &=  \frac{8\pi h}{c^3}\frac{\nu^3}{e^{\beta h\nu}-1}\\
+        \frac{d}{dx}&[ \frac{x^{\alpha}}{e^x - 1}] =0\\
+        x &= \alpha(1 - e^{-x})
+    \end{alignat*}
+
+    \section*{(23.3):}
+    \begin{alignat*}{2}
+        (a):
+        T &= 2.73K\\
+        u &= \frac{\sigma}{c}T^4 = \frac{5.67 \times 10^{-8}}{3 \times 10^{8}}55.54\\
+        &= 1.05 \times 10^{-14}\\\\
+        (c):
+        if A= 0.01m^2 \Rightarrow P &= \sigma T^4 (0.01) = 3.14 \times 10^{-8} J/s\\\\
+        (d):
+        p &= \frac{u}{3} =3.5 \times 10^{-15}pa
+    \end{alignat*}
+    
+    \section*{(23.4): }
+    \begin{alignat*}{2}
+        N_{sun} &= \frac{l/4\pi D^2}{2.7 k_B T_{sun}}\\
+        N_{CMB} &= \frac{\sigma T^4}{2.7k_B T_{CMB}}\\
+        \Longrightarrow \frac{N_{sun}}{N_{CMB}} &= \frac{\frac{l/4\pi D^2}{2.7 k_B T_{sun}}}{\frac{\sigma T^4}{2.7k_B T_{CMB}}} \\
+        &= \frac{l}{4\pi D^2 T_{sun} \sigma T_{CMB}^4}\\
+        l = 4\pi R^2 \sigma T_{sun}^4 \Rightarrow \frac{N_{sun}}{N_{CMB}} &= (\frac{T_{sun}}{T_{CMB}})^3 (\frac{R_{sun}}{D})^2
+    \end{alignat*}
+
+    \section*{(23.5):}
+    \begin{alignat*}{2}
+        (a):
+        dU &= TdS - pdV\\
+        (\frac{\partial U}{\partial V})_T &=  T(\frac{\partial S}{\partial V})_T - p\\
+        \begin{cases}
+            U = uV\\
+            p = u/3\\
+            S = sV
+        \end{cases}
+        \Rightarrow u &= Ts - u/3\\
+        s &= \frac{4u}{3T}\\\\
+        (b):
+        G &= uV + pV - TsV\\
+        &= uV + \frac{u}{3}V - \frac{4u}{3V}\\
+        &=0\\\\
+        C_V &= (\frac{\partial u}{\partial T}) = V(\frac{\partial u}{\partial T})_V\\
+        &= 3V(\frac{\partial p}{\partial T})_V = 3V(\frac{\partial S}{\partial V})_T = 3Vs\\
+        C_{\nu} &= C_V/ V = 3s
+    \end{alignat*}
+
+    \section*{(23.6):}
+    \begin{alignat*}{2}
+        Z &= \prod Z_{\omega}\\
+        Z_{\omega} &= \frac{1}{1- e^{-\beta \hbar \omega}}\\
+        Z &= \prod[\frac{1}{1- e^{-\beta \hbar \omega}}]\\
+        \Rightarrow lnZ = \Sigma ln [\frac{1}{1- e^{-\beta \hbar \omega}}]\\
+        &= \int g_{(\omega)} d\omega ln[\frac{1}{1- e^{-\beta \hbar \omega}}]\\
+        g_{(\omega)} d\omega &= \frac{v\omega^3 d\omega}{\pi^2 c^3}\\
+        ln [\frac{1}{1- e^{-\beta \hbar \omega}}] &= - ln [1- e^{-\beta \hbar \omega}]\\
+        lnZ &= -\frac{V}{\pi^2 c^3} \int \omega^2 ln (1- e^{-\beta \hbar \omega}) d\omega\\
+    \end{alignat*}
+\end{latin}
